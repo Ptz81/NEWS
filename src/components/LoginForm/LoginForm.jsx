@@ -9,15 +9,15 @@ export const LoginForm = () => {
     e.preventDefault();
     const form = e.currentTarget;
     
-    const usernameValue = form.elements.username.value;
+    const emailValue = form.elements.email.value;
     const passwordValue = form.elements.password.value;
     
-    console.log('Username:', usernameValue);
+    console.log('Email:', emailValue);
     console.log('Password:', passwordValue);
     
     dispatch(
       logIn({
-        username: usernameValue,
+        email: emailValue,
         password: passwordValue,
       })
     );
@@ -39,10 +39,10 @@ export const LoginForm = () => {
         >
         </InputIcon>
         <InputField
-          placeholder="Username"
-          id="username"
-          name="username"
-          type="username"
+          placeholder="Email"
+          id="email"
+          name="email"
+          type="email"
         />
       </InputContainer>
       <InputContainer>
