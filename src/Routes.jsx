@@ -31,11 +31,11 @@ export const WebRoutes = () => {
         <Route
           path="/login"
           element={
-            <RestrictedRoute redirectTo="/table" component={<LoginPage />} />
+            <RestrictedRoute redirectTo="/posts" component={<LoginPage />} />
           }
         />
         <Route
-          path="/table"
+          path="/posts"
           element={
             <PrivateRoute redirectTo="/login" component={<NewsPage />} />
           }

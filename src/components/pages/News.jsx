@@ -1,37 +1,34 @@
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
-// import { getIsLoading } from '../../redux/contacts/selectors.js';
+import { getIsLoading } from '../../redux/news/selectors.js';
 // import ContactList from '../ContactList/ContactList.jsx';
 // import Filter from '../Filter/Filter.jsx';
-// import Loader from '../Loader/Loader.jsx';
+import Loader from '../Loader/Loader.jsx';
 import { NewsContainer, NewsPage, TitleNews } from './pages.styled.js';
 
 
 export default function Contacts() {
 
-//   const isLoading = useSelector(getIsLoading);
+  const isLoading = useSelector(getIsLoading);
 
   return (
-    <>
-      <NewsPage>
-          <div>
-      <Helmet>
+    <> 
+    <Helmet>
         <TitleNews>Your News filter</TitleNews>
       </Helmet>
-      {/* <div>{isLoading && <Loader/>}</div> */}
+
+  <NewsPage>
+      <div>{isLoading && <Loader/>}</div>   
       {/* <Filter /> */}
-      </div>
-        <Helmet>
-        <TitleNews>News List</TitleNews>
-      </Helmet>
-        {/* <ContactForm /> */}
-        {/* <div>{isLoading && <Loader/>}</div> */}
+        <TitleNews>News Channel</TitleNews>
+        {/* <NewsForm /> */}
+        <div>{isLoading && <Loader/>}</div>
          <NewsContainer>
-         <div>
-      {/* <ContactList /> */}
-        </div>
+
+      {/* <ChannelList /> */}
+
       </NewsContainer>
-</NewsPage>
+  </NewsPage>
     </>
   );
 }

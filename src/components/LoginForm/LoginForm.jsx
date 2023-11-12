@@ -43,6 +43,7 @@ export const LoginForm = () => {
           id="email"
           name="email"
           type="email"
+          defaultValue="Brenda@mail.com" 
         />
       </InputContainer>
       <InputContainer>
@@ -61,6 +62,7 @@ export const LoginForm = () => {
           id="password"
           name="password"
           type="password"
+          defaultValue="12345QWERT" 
         />
       </InputContainer>
       <Button id="button" type="submit">Submit</Button>
