@@ -1,19 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { Button } from 'react-bootstrap';
 
 
-export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-`;
-
-export const Username = styled.p`
-  font-weight: 700;
-  font-size: 18px;
-`;
-
-export const Button = styled.button`
-  border: none;
+export const StatusButton = styled(Button)`
+border: none;
   font: inherit;
   cursor: pointer;
   outline: none;
@@ -22,7 +12,7 @@ export const Button = styled.button`
   padding: 6px 10px;
   background-color: #fff;
   color: var(--accentColor);
-margin: 0 10px 10px 0;
+
   &:hover,
   &:focus {
     border: 1px solid var(--accentColor);

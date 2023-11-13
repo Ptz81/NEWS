@@ -3,11 +3,7 @@ import { handleFulfilled, handleFulfilledCreate, handleFulfilledDelete, handleFu
 import { correctPost, createPost, deletePost, fetchPost, toggleFavorites } from "./api.js";
 
 const initialState = {
-  items: [
-  { id: "0", channel: "NASA", title: "Breaking news", body:'', link: 'https://www.nasa.gov/rss/dyn/breaking_news.rss'},
-  { id: "1", channel: "Reddit", title: "Front page", body:'', link: 'https://www.reddit.com/.rss'},
-  { id: "2", channel: "Mobile", title: "World Live", body:'', link: 'https://www.mobileworldlive.com/latest-stories/feed/'},
-  ],
+  items: [],
   favorites: false,
   isLoading: false,
   error: null

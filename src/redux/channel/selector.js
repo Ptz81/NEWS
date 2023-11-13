@@ -1,0 +1,1 @@
+export const getChannel = state => state.channel;

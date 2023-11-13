@@ -11,7 +11,7 @@ import Loader from './components/Loader/Loader.jsx';
 
 const HomePage = lazy(() => import('./components/pages/Home.jsx'));
 const LoginPage = lazy(() => import('./components/pages/Login.jsx'));
-const NewsPage = lazy(() => import('./components/pages/News.jsx'));
+const ChannelPage = lazy(() => import('./components/pages/Channel.jsx'));
 
 export const WebRoutes = () => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ export const WebRoutes = () => {
   return isRefreshing ? (
     <Loader/>
   ) : (
-          // return (
+
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
@@ -37,7 +37,7 @@ export const WebRoutes = () => {
         <Route
           path="/posts"
           element={
-            <PrivateRoute redirectTo="/login" component={<NewsPage />} />
+            <PrivateRoute redirectTo="/login" component={<ChannelPage />} />
           }
         />
       </Route>

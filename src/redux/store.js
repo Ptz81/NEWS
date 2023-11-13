@@ -8,7 +8,8 @@ import thunk from 'redux-thunk'
 import storage from 'redux-persist/lib/storage';
 import { authReducer } from './auth/slice.js';
 import { postReducer } from './news/PostSlice.js';
-// import { filterReducer } from './filter/filterSlice.js';
+import { filtersReducer } from './filter/reducer.js';
+import { channelReducer } from './channel/reducer.js';
 
 const authPersistConfig = {
   key: 'auth',
@@ -20,7 +21,8 @@ export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
     post: postReducer,
-    // filter: filterReducer,
+    filters: filtersReducer,
+    channel: channelReducer,
   },
   middleware: [thunk, ],
 });
