@@ -17,14 +17,14 @@ export const TitleNews = styled.h2`
      font-size: 24px;
      text-align: center;
 `
-export const NewsPage = styled.div`
+export const NewsPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: calc(100vh - 50px);
 `;
 
-export const NewsContainer = styled.div`
+export const NewsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 

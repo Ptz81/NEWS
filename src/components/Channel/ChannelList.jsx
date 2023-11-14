@@ -6,6 +6,7 @@ import { getChannel } from "../../redux/channel/selector.js";
 import { getStatusFilter } from "../../redux/filter/selector.js";
 
 
+
 const getFavoriteChannel = (items, statusFilter) => {
    if (!items) {
     return null; 
@@ -28,7 +29,7 @@ export const ChannelList = () => {
     <ListGroup as="ol" numbered>
       {favoriteChannel.map(item => (
         <ListGroup.Item  action style={{ display: 'flex' }} variant="info" as="li" mr="3" key={item.id}>
-          <Channel item={item}/>
+            <Channel item={item} />
         </ListGroup.Item>
       ))}
     </ListGroup>

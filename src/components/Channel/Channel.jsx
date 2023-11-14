@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 import { Body, ButtonWrapper, InputWrapper, TaskWrapper, Title } from "./Channel.styled";
 import CustomCheckbox from "../CustomCheckbox/CustomCheckbox.jsx";
 import { Button } from "../UserMenu/UserMenu.styled";
-import ModalForm from "./ChannelModal.jsx";
+// import ModalForm from "./ChannelModal.jsx";
 import { correctChannel, deleteChannel, toggleFavorites } from "../../redux/channel/actions";
+import { Link } from "react-router-dom";
+import ModalForm from "../Modal/Modal";
 
 
 export const Channel = ({ item }) => {
@@ -23,11 +25,14 @@ export const Channel = ({ item }) => {
   return (
     <TaskWrapper>
       <CustomCheckbox onChange={handleToggleFavorites} checked={item.favorites} />
-      <InputWrapper>
+      <Link to={`/news/${item.id}`}>
+         <InputWrapper>
         <Title>{item.title}</Title>
         <Body>{item.link}</Body>
         
       </InputWrapper>
+       </Link>
+     
       <ButtonWrapper>
         <Button onClick={() => handleUpdate()}>Correct</Button>
         <Button onClick={handleDelete}>

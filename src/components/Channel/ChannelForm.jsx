@@ -4,6 +4,7 @@ import { Container, Form } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { addChannel } from "../../redux/channel/actions";
 import { StatusButton } from "../Filter/StatusFilter.styled";
+import { InputComponent } from "./Channel.styled";
 
 export const ChannelForm = () => {
     const dispatch = useDispatch();
@@ -51,7 +52,7 @@ export const ChannelForm = () => {
      <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-2" controlId="ControlInput1">
               <Form.Label>Title</Form.Label>
-              <Form.Control
+              <InputComponent
                 type="title"
                 placeholder="write title"
                 autoFocus
@@ -63,10 +64,9 @@ export const ChannelForm = () => {
               controlId="ControlInput1"
             >
               <Form.Label>Link</Form.Label>
-                  <Form.Control
+                  <InputComponent
                 type="link"
                 placeholder="write link"
-                autoFocus
                 name="link"
                   />
             </Form.Group>

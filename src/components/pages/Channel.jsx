@@ -5,11 +5,11 @@ import { ChannelList } from "../Channel/ChannelList";
 export default function Channel() {
 
   return (
-    <>
+    <div>
       <ChannelBar /> 
       <ChannelForm />
       <ChannelList/>
-    </>
+    </div>
 
 
 

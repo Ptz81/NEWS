@@ -7,11 +7,14 @@ import { Layout } from './components/sharedLayout/sharedLayout.jsx';
 import { RestrictedRoute } from './components/RestrictedRoute.jsx';
 import { PrivateRoute } from './components/PrivateRoute.jsx';
 import Loader from './components/Loader/Loader.jsx';
+// import News from './components/pages/News.jsx';
+
 
 
 const HomePage = lazy(() => import('./components/pages/Home.jsx'));
 const LoginPage = lazy(() => import('./components/pages/Login.jsx'));
 const ChannelPage = lazy(() => import('./components/pages/Channel.jsx'));
+const NewsPage = lazy(() => import('./components/pages/News.jsx'));
 
 export const WebRoutes = () => {
   const dispatch = useDispatch();
@@ -26,7 +29,8 @@ export const WebRoutes = () => {
   ) : (
 
     <Routes>
-      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
+          
         <Route index element={<HomePage />} />
         <Route
           path="/login"
@@ -39,7 +43,15 @@ export const WebRoutes = () => {
           element={
             <PrivateRoute redirectTo="/login" component={<ChannelPage />} />
           }
-        />
+          />
+           <Route
+          path="/news/:id"
+          element={
+            <PrivateRoute redirectTo="/login" component={<NewsPage />} />
+            }
+          />
+    
+          
       </Route>
     </Routes>
   );

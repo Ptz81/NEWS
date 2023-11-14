@@ -13,10 +13,15 @@ export const ModalOverlay = styled.div`
   z-index: 1000;
 `;
 
+export const ModalBtnWrapper = styled.div`
+margin-top: 30px;
+text-align: center;
+`
+
 export const ModalContent = styled.div`
   background-color: #fff;
-  width: 540px;
-  min-height: 720px;
+  width: 400px;
+  min-height: 170px;
   position: relative;
   padding: 40px;
   overflow-y: auto;
