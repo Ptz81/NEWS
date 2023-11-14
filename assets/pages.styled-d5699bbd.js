@@ -1,4 +1,4 @@
-import{s as e}from"./index-c85ce8a0.js";const i=e.div`
+import{s as e}from"./index-a4f2d4f9.js";const i=e.div`
  min-height: calc(100vh - 50px);
      display: flex;
      align-items: center;
