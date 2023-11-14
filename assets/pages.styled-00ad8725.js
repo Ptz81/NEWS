@@ -1,4 +1,4 @@
-import{s as e}from"./index-f2a0cfec.js";const i=e.div`
+import{s as e}from"./index-c85ce8a0.js";const i=e.div`
  min-height: calc(100vh - 50px);
      display: flex;
      align-items: center;
@@ -6,7 +6,7 @@ import{s as e}from"./index-f2a0cfec.js";const i=e.div`
      background-size: cover;
 `,n=e.h1`
  font-weight: 500;
-     font-size: 48px;
+     font-size: 84px;
      text-align: center;
 `,c=e.h2`
  font-weight: 500;
