@@ -22,8 +22,8 @@ import App from "./App.jsx";
 ReactDOM.createRoot(document.getElementById('root')).render(
 <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-      {/* <BrowserRouter basename='/NEWS'> */}
-         <BrowserRouter >
+      <BrowserRouter basename='/NEWS'>
+         {/* <BrowserRouter > */}
           <App/>
         </BrowserRouter>
       </PersistGate>
