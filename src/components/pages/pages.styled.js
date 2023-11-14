@@ -9,7 +9,7 @@ export const ContainerHome = styled.div`
 `
 export const TitleHome = styled.h1`
  font-weight: 500;
-     font-size: 48px;
+     font-size: 84px;
      text-align: center;
 `
 export const TitleNews = styled.h2`

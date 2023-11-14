@@ -11,7 +11,7 @@ import Loader from './components/Loader/Loader.jsx';
 const HomePage = lazy(() => import('./components/pages/Home.jsx'));
 const LoginPage = lazy(() => import('./components/pages/Login.jsx'));
 const ChannelPage = lazy(() => import('./components/pages/Channel.jsx'));
-const NewsPage = lazy(() => import('./components/pages/News.jsx'));
+import NewsPage from './components/pages/News.jsx';
 
 export const WebRoutes = () => {
   const dispatch = useDispatch();

@@ -1,8 +1,8 @@
 
 const channelInitialState = [
-  { id: "0", title: "NASA:Breaking news", link: 'https://www.nasa.gov/rss/dyn/breaking_news.rss', favorites: true},
-  { id: "1", title: "Reddit:Front page", link: 'https://www.reddit.com/.rss', favorites: true},
-  { id: "2",  title: "Mobile:World Live", link: 'https://www.mobileworldlive.com/latest-stories/feed/', favorites: false},
+  { id: "0", title: "France:Breaking news", link: 'http://www.france24.com/fr/france/rss', favorites: true},
+  // { id: "1", title: "Reddit:Front page", link: 'https://www.reddit.com/.rss', favorites: true},
+  // { id: "2",  title: "Mobile:World Live", link: 'https://www.mobileworldlive.com/latest-stories/feed/', favorites: false},
 ];
 
 export const channelReducer = (state = channelInitialState, action) => {
