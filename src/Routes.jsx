@@ -7,9 +7,6 @@ import { Layout } from './components/sharedLayout/sharedLayout.jsx';
 import { RestrictedRoute } from './components/RestrictedRoute.jsx';
 import { PrivateRoute } from './components/PrivateRoute.jsx';
 import Loader from './components/Loader/Loader.jsx';
-// import News from './components/pages/News.jsx';
-
-
 
 const HomePage = lazy(() => import('./components/pages/Home.jsx'));
 const LoginPage = lazy(() => import('./components/pages/Login.jsx'));

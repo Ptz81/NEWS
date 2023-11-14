@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { Body, ButtonWrapper, InputWrapper, TaskWrapper, Title } from "./Channel.styled";
 import CustomCheckbox from "../CustomCheckbox/CustomCheckbox.jsx";
 import { Button } from "../UserMenu/UserMenu.styled";
-// import ModalForm from "./ChannelModal.jsx";
 import { correctChannel, deleteChannel, toggleFavorites } from "../../redux/channel/actions";
 import { Link } from "react-router-dom";
 import ModalForm from "../Modal/Modal";

@@ -5,8 +5,6 @@ import { Channel } from "./Channel.jsx";
 import { getChannel } from "../../redux/channel/selector.js";
 import { getStatusFilter } from "../../redux/filter/selector.js";
 
-
-
 const getFavoriteChannel = (items, statusFilter) => {
    if (!items) {
     return null; 
@@ -18,7 +16,6 @@ const getFavoriteChannel = (items, statusFilter) => {
       return items;
   }
 }
-// statusFilter === statusFilters.favorites ? items.filter(item => item.favorites) : items;
 
 export const ChannelList = () => {
   const items = useSelector(getChannel);
